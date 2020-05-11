@@ -1,0 +1,25 @@
+.listWrapper {
+  list-style: none;
+  margin-left: 50px;
+}
+
+.navItem {
+  display: inline-block;
+  margin-right: 80px;
+}
+.navLink {
+  text-decoration: none;
+  color: #818181;
+
+  &Active {
+    font-weight: 700;
+  }
+
+  &:visited {
+    color: #818181;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,10 @@
+.header {
+  display: grid;
+  grid-template-columns: 120px 1fr 200px;
+  align-items: baseline;
+  padding: 30px 40px;
+
+  .favNoteLogo {
+    transform: scale(1.4);
+  }
+}

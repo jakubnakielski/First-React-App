@@ -1,0 +1,46 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 60px 60px;
+  box-shadow: 0 10px 40px -20px rgb(0, 74, 134);
+  z-index: 1;
+  background: white;
+  animation: slideIn .2s;
+}
+.closeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  border: 2px solid var(--base-color);
+  color: var(--base-color);
+  font-size: 1em;
+  transition: 0.2s;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    background: var(--base-color);
+    color: white;
+  }
+
+
+}

@@ -1,0 +1,36 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  animation: appear 0.5s ease;
+  will-change: opacity, transform;
+
+  &:not(:last-child) {
+    padding: 0 30px 50px 0;
+  }
+}
+
+.image {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.description {
+  margin: 10px 0 20px;
+  font-weight: 300;
+  color: #616161;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
