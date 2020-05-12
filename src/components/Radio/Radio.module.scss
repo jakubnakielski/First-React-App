@@ -1,4 +1,27 @@
-label {
-    margin-right: 20px;
-    user-select: none;
+.radio {
+  margin-right: 20px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  color: var(--base-color);
+  font-weight: 700;
+
+  &Input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &Button {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--base-color);
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &Input:checked + &Button {
+    box-shadow: inset 0px 0px 0px 2px white;
+    background: var(--base-color);
+  }
+
 }

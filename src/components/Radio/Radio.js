@@ -2,14 +2,16 @@ import React from 'react';
 import styles from './Radio.module.scss';
 
 const Radio = ({type, checked, title, ...props} ) => (
-    <label className={styles.label}>
+    <label className={styles.radio}>
         <input
             id={type}
-            className={styles.radioBtn}
+            className={styles.radioInput}
             type="radio"
             checked={checked === type}
             {...props}
-        />{title}
+        />
+        <div className={styles.radioButton}></div>
+        {title}
     </label>
 );
 
